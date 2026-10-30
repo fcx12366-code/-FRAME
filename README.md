@@ -2,7 +2,7 @@
 
 一个面向中国大陆影迷的电影发现与正版观看入口网站。以编辑式片单、宽屏电影画面和明确的播放来源帮助用户找片。
 
-本轮只进行本地开发、测试和 GitHub 源代码上传。**尚未部署 Netlify，也没有创建自动部署流程。** `netlify.toml` 仅预留静态构建和 SPA 路由刷新配置。
+已按后续部署指令将生产构建上传至 Netlify：[FRAME](https://frame-cinema-fcx12366.netlify.app)。部署方式为手动发布，尚未连接 GitHub 自动部署。访问状态和线上验证记录见 [部署说明](docs/deployment.md)。`netlify.toml` 配置静态构建、SPA 路由刷新和响应安全头。
 
 ## 本地运行（Windows）
 

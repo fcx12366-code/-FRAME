@@ -1,4 +1,4 @@
-# Future compatibility only. This task does not authorize deployment.
+# Static production build, SPA routes, and response security headers.
 [build]
   command = "npm run build"
   publish = "dist"
