@@ -1,0 +1,12 @@
+node_modules/
+dist/
+work/
+.agents/
+.env
+.env.*
+!.env.example
+test-results/
+playwright-report/
+*.local
+*.log
+*.tsbuildinfo

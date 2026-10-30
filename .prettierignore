@@ -1,0 +1,6 @@
+node_modules
+dist
+work
+.agents
+package-lock.json
+public/images

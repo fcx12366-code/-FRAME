@@ -1,0 +1,189 @@
+{
+  "generatedAt": "2026-10-30T06:44:38.817Z",
+  "browser": "Installed Chrome, headless, channel chrome",
+  "baseURL": "http://127.0.0.1:5173",
+  "methodology": "One complete final-product run after correcting ambiguous test selectors and an outdated official URL path expectation. Product code was unchanged during the final QA runs. Earlier raw reports are retained separately.",
+  "tests": {
+    "total": 10,
+    "passed": 10,
+    "failed": 0,
+    "details": [
+      {
+        "title": "real search matches Chinese, English, director and actor",
+        "source": "playwright-results.json",
+        "passed": true,
+        "results": [
+          {
+            "status": "passed",
+            "durationMs": 1060
+          }
+        ]
+      },
+      {
+        "title": "combined filters, shareable URL, history back and empty state",
+        "source": "playwright-results.json",
+        "passed": true,
+        "results": [
+          {
+            "status": "passed",
+            "durationMs": 1122
+          }
+        ]
+      },
+      {
+        "title": "detail route is independently addressable and favorite survives refresh",
+        "source": "playwright-results.json",
+        "passed": true,
+        "results": [
+          {
+            "status": "passed",
+            "durationMs": 1154
+          }
+        ]
+      },
+      {
+        "title": "DOM-simulated progress persists and clear history preserves favorites",
+        "source": "playwright-results.json",
+        "passed": true,
+        "results": [
+          {
+            "status": "passed",
+            "durationMs": 1398
+          }
+        ]
+      },
+      {
+        "title": "unknown routes and corrupt localStorage recover visibly",
+        "source": "playwright-results.json",
+        "passed": true,
+        "results": [
+          {
+            "status": "passed",
+            "durationMs": 1274
+          }
+        ]
+      },
+      {
+        "title": "mobile navigation closes with Escape and reduced-motion is respected",
+        "source": "playwright-results.json",
+        "passed": true,
+        "results": [
+          {
+            "status": "passed",
+            "durationMs": 683
+          }
+        ]
+      },
+      {
+        "title": "seven widths across seven routes have no horizontal overflow",
+        "source": "playwright-results.json",
+        "passed": true,
+        "results": [
+          {
+            "status": "passed",
+            "durationMs": 48696
+          }
+        ]
+      },
+      {
+        "title": "idle player stays ready for a user gesture without a timeout error",
+        "source": "playwright-results.json",
+        "passed": true,
+        "results": [
+          {
+            "status": "passed",
+            "durationMs": 22389
+          }
+        ]
+      },
+      {
+        "title": "deliberately blocked media shows an actionable error and retry returns to idle",
+        "source": "playwright-results.json",
+        "passed": true,
+        "results": [
+          {
+            "status": "passed",
+            "durationMs": 761
+          }
+        ]
+      },
+      {
+        "title": "three official video streams: genuine click and playback diagnostics",
+        "source": "playwright-results.json",
+        "passed": true,
+        "results": [
+          {
+            "status": "passed",
+            "durationMs": 37489
+          }
+        ]
+      }
+    ]
+  },
+  "responsive": {
+    "widths": [1920, 1440, 1024, 768, 430, 393, 375],
+    "checks": 49,
+    "documentOrBodyOverflow": [],
+    "pageErrors": [],
+    "screenshots": "work/qa/screenshots/"
+  },
+  "video": {
+    "methodology": "Real installed Chrome, no request interception; clicked the product-visible 开始放映 button; observed up to 22 seconds, success means currentTime >= 1 second. This is not full-film playback verification.",
+    "passedStartupChecks": 3,
+    "total": 3,
+    "results": [
+      {
+        "id": "tears-of-steel",
+        "progressed": true,
+        "elapsedMs": 5687,
+        "diagnostics": {
+          "src": "https://video.blender.org/object-storage/web_videos/8533ea43-4271-4a57-9694-e9d0b35e1aa1-720.mp4",
+          "currentTime": 1.495971,
+          "duration": 734.216009,
+          "readyState": 4,
+          "networkState": 1,
+          "paused": false,
+          "textTracks": [],
+          "error": null
+        },
+        "networkErrors": [],
+        "applicationErrorVisible": false
+      },
+      {
+        "id": "sintel",
+        "progressed": true,
+        "elapsedMs": 12910,
+        "diagnostics": {
+          "src": "https://video.blender.org/object-storage/web_videos/0eb052d0-fd51-43e6-aa33-ecdbf77a5d40-720.mp4",
+          "currentTime": 1.332483,
+          "duration": 888.092993,
+          "readyState": 3,
+          "networkState": 2,
+          "paused": false,
+          "textTracks": [],
+          "error": null
+        },
+        "networkErrors": [],
+        "applicationErrorVisible": false
+      },
+      {
+        "id": "big-buck-bunny",
+        "progressed": true,
+        "elapsedMs": 13423,
+        "diagnostics": {
+          "src": "https://video.blender.org/object-storage/web_videos/6402b77c-b61f-4a06-96ca-c8420a2becf4-720.mp4",
+          "currentTime": 1.183782,
+          "duration": 634.667,
+          "readyState": 3,
+          "networkState": 2,
+          "paused": false,
+          "textTracks": [],
+          "error": null
+        },
+        "networkErrors": [],
+        "applicationErrorVisible": false
+      }
+    ],
+    "limitations": "Only startup/currentTime advancement was tested. Not full-film, audio, subtitle, or all geographic networks. Progress persistence uses a separately labeled DOM simulation; media-error UI uses a separately labeled intentionally blocked request."
+  }
+}
